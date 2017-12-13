@@ -1,32 +1,65 @@
-title: PRIYONO.ID
-description: Personal website of I V Agung Eko Priyono,
-show_downloads: false
+# Site settings 配置站点
+title: 'TESTING'
+description: 'Thanks liaokeyu'
+keyword: 'nothing'
+url: '' # your host
 
-baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://priyono.id" # change this to the base hostname & protocol for your site
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
 
-plugins:
-  - jekyll-mentions
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
-permalink: pretty
+# Author 配置博主信息
+author: 'author'
+nickname: 'name'
+bio: 'bio here'
+avatar: '/assets/img/profile.png'
 
-google_analytics:
-# cayman-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-cayman-blog:
-  date_format: "%-d %b %Y"
+# Search
+search: true
 
-theme: # leave it empty
+# Night mode
+nightMode: true
 
-# social
-author: "I V Agung Eko Priyono"
-image: /thumbnail-jumbo.png
-twitter:
-  username: iv_agung_ep
-#  site:
-facebook:
-  #publisher: 
-  #profile_id: 
-  app_id:  # cayman-blog
-  #authors: iv.agung.ep
-#  admins:
+# Comments
+disqus: true
+disqus_url: 'https://priyono.disqus.com/embed.js'
+
+# Share
+social-share: true
+social-share-items: ['instagram', 'facebook', 'whatsapp', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  twitter: '//twitter.com/iv_agung_ep'
+  instagram: '//www.instagram.com/iv_agung_ep'
+  github: '//github.com/kaeyleo'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+RSS: false
+
+# Plugins
+gems: [jekyll-paginate]
