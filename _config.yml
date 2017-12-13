@@ -2,10 +2,10 @@
 title: 'TESTING'
 description: 'Thanks liaokeyu'
 keyword: 'nothing'
-url: 'https://priyono.id' # your host
+url: 'https://priyono.id/en/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: '/en'
+baseurl: '/'
 
 # Navigation links
 nav:
